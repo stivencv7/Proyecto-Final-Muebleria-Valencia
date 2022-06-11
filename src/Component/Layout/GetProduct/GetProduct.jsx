@@ -1,8 +1,8 @@
 import React from 'react'
-// import { ServiceProduct_Delete } from '../../../service/ServiceProduct/ServiceProduct_Delete'
+import { ServiceProduct_Delete } from '../../../service/ServiceProduct/ServiceProduct_Delete'
 // import { Button } from '../../UI/Button/Button'
 
-export const GetProduct = ({ productFound = [] }) => {
+export const GetProduct = ({ productFound = [], variable = 3 }) => {
 
     return (
         <div>
@@ -27,6 +27,7 @@ export const GetProduct = ({ productFound = [] }) => {
                                 <td><input type="text" placeholder={item.nombre} id="n" /></td>
                                 <td><textarea type="text" placeholder={item.descripcion} id="d" /></td>
                                 <td><input type="number" placeholder={item.presio} id="p" /></td>
+                                <td><ServiceProduct_Delete event={variable} /></td>
                             </tr>
                         ))
                     }

@@ -25,10 +25,6 @@ export const ServiceProduct_Register = () => {
         setPress(even.target.value)
     }
 
-
-
-
-
     function registerProduct() {
 
         const urlRegister = 'http://localhost:8080/productos';
@@ -47,7 +43,6 @@ export const ServiceProduct_Register = () => {
         })
             .then(response => response)
             .then(json => check(json.ok))
-
     }
 
     function check(element) {
@@ -65,7 +60,4 @@ export const ServiceProduct_Register = () => {
                 onChange4={catchPress} onClick={registerProduct} />
         </div>
     )
-
-
-
 }

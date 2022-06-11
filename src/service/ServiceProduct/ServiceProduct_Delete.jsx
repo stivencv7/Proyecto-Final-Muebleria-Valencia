@@ -1,15 +1,13 @@
-/** 
+
 import React from 'react'
 
+export const ServiceProduct_Delete = ({ variable }) => {
 
+    const urlDelete = 'http://localhost:8080/productos/eliminar/';
 
-
-export const ServiceProduct_Delete = ({search}) => {
-  
-    const urlDelete = 'http://localhost:8080/servicioProductos/eliminar/';
-  
     function deleteProduct() {
-        fetch(urlDelete+search , { method: 'DELETE' })
+        console.log(variable)
+        fetch(urlDelete + document.getElementById("input_buscar").value, { method: 'DELETE' })
             .then(response => response)
             .then(respuesta => {
                 if (respuesta.status == 200) {
@@ -22,7 +20,6 @@ export const ServiceProduct_Delete = ({search}) => {
     }
 
     return (
-    <div></div>
-  )
+        <button onClick={deleteProduct}>Eliminar</button>
+    )
 }
-**/
