@@ -1,5 +1,6 @@
 import React from 'react'
 import { ServiceProduct_Delete } from '../../../service/ServiceProduct/ServiceProduct_Delete'
+import { ServiceProduct_Update } from '../../../service/ServiceProduct/ServiceProduct_Update'
 // import { Button } from '../../UI/Button/Button'
 
 export const GetProduct = ({ productFound = [], variable = 3 }) => {
@@ -26,8 +27,9 @@ export const GetProduct = ({ productFound = [], variable = 3 }) => {
                                 <td ><input type="number" placeholder={item.codigo_Producto} id="c" value={item.codigo_Producto} /></td>
                                 <td><input type="text" placeholder={item.nombre} id="n" /></td>
                                 <td><textarea type="text" placeholder={item.descripcion} id="d" /></td>
-                                <td><input type="number" placeholder={item.presio} id="p" /></td>
+                                <td><input type="number" placeholder={item.precio} id="p" /></td>
                                 <td><ServiceProduct_Delete event={variable} /></td>
+                                <td><ServiceProduct_Update /></td>
                             </tr>
                         ))
                     }

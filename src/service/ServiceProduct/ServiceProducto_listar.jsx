@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import { IteratorListProduct } from '../../Component/Layout/IteratorListProduct/IteratorListProduct';
 
 export const ServiceProducto_listar = () => {
@@ -7,7 +7,10 @@ export const ServiceProducto_listar = () => {
     const getProducts = () => {
         fetch(url)
             .then(response => response.json())
-            .then(data => setProduct(data))
+            .then(data => {
+                setProduct(data)
+                console.log("hola" + data.fecha)
+            })
     }
 
     useEffect(() => {
@@ -17,6 +20,6 @@ export const ServiceProducto_listar = () => {
     }, [product])
 
     return (
-    <IteratorListProduct productos={product}/>
-  )
+        <IteratorListProduct productos={product} />
+    )
 }

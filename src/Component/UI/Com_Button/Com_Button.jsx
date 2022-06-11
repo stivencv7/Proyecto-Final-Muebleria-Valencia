@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Com_Button = ({action}) => {
+export const Com_Button = ({ action, text }) => {
   return (
-    <button onClick={action}></button>
+    <button onClick={action}>{text}</button>
   )
 }

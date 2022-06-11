@@ -6,10 +6,13 @@ import { FormRegisterProducts } from '../../Component/Layout/FormRegisterProduct
 
 export const ServiceProduct_Register = () => {
 
+    const data = new Date()
+    const fecha = data.toISOString().split('T')[0]
     const [idProduct, setIdProduct] = useState(0)
     const [name_product, setProduct] = useState("")
     const [descrition, setDescrition] = useState("")
     const [press, setPress] = useState(0)
+
 
     const catchName = (even) => {
         setProduct(even.target.value)
@@ -28,7 +31,7 @@ export const ServiceProduct_Register = () => {
     }
 
     function registerProduct() {
-
+        console.log(fecha)
         const urlRegister = 'http://localhost:8080/productos';
 
         fetch(urlRegister, {
@@ -40,7 +43,8 @@ export const ServiceProduct_Register = () => {
                 codigo: idProduct,
                 nombre: name_product,
                 descripcion: descrition,
-                presio: press,
+                precio: press,
+                fecha: fecha
             })
         })
             .then(response => response)

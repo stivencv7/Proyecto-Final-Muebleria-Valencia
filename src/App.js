@@ -1,6 +1,6 @@
 import './App.css';
-import { Home } from './Component/UI/Home/Home';
-import { ServiceLogin } from './service/ServiceLogin/ServiceLogin';
+//import { Home } from './Component/UI/Home/Home';
+//import { ServiceLogin } from './service/ServiceLogin/ServiceLogin';
 
 
 import { ServiceProduct_Register } from './service/ServiceProduct/ServiceProduct_Register';
@@ -12,17 +12,18 @@ import { ServiceProduct_Search } from './service/ServiceProduct/ServiceProduct_S
 function App() {
   return (
     <div className="App">
-    
-      <ServiceProduct_Search/>
+
+      <ServiceProduct_Search />
       <hr></hr>
       <ServiceProduct_Register />
-      <hr/>
-      <ServiceProducto_listar/>
-
+      <hr />
+      <ServiceProducto_listar />
+      {/*  
         <Home/>
         <div>
           <ServiceLogin/>
         </div>
+      */}
 
     </div>
 
