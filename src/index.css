@@ -11,3 +11,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#categories {
+  font-family: verdana, sans sherif;
+  width: 80%;
+  margin: 1.5rem auto;
+  margin-left: -25%;
+}
+
+#categories ul {
+  list-style-type: none; 
+  text-align: center;
+  font-size: 0;
+}
+
+#categories > ul li {
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  background: #0d50e0;
+}
+
+#categories li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  line-height: 3.5rem;
+}
+
+#categories li a:hover,
+#categories li a:focus {
+  background: rgb(255, 94, 0);
+  color: #fff;
+}
+
+#categories li ul {
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+}
+
+#categories li li {
+  display: block;
+  width: 100%;
+}
+
+#categories li:hover li a,
+#categories li:focus li a {
+  display: block;
+  font-family: monospace;
+  font-size: .9rem;
+  line-height: 1.7rem;
+  border-top: 1px solid #e5e5e5;
+  background: #0d50e0;
+}
+#categories li li a:hover,
+#categories li li a:focus {
+  background: rgb(255, 94, 0); 
+}
+
+#categories li:hover ul,
+#categories li:focus ul {
+    width: 100%;
+    z-index: 5;
+    margin: 0 -4rem -4rem -4rem;
+    padding: 0 4rem 4rem 4rem;
+}

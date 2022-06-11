@@ -1,4 +1,6 @@
 
+
+
 import { useState } from 'react'
 import { FormRegisterProducts } from '../../Component/Layout/FormRegisterProducts/FormRegisterProducts'
 
@@ -24,10 +26,6 @@ export const ServiceProduct_Register = () => {
     const catchPress = (even) => {
         setPress(even.target.value)
     }
-
-
-
-
 
     function registerProduct() {
 
