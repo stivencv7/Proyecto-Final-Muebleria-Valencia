@@ -5,6 +5,7 @@ import { ProductsInterface } from './Component/Layout/ProductsInterface/Products
 import { ServiceLogin } from './service/ServiceLogin/ServiceLogin';
 import { Beds } from './Component/UI/Beds/Beds';
 import { HomeUser } from './Component/UI/Home/HomeUser';
+import { ServiceUser_Register } from './service/ServiceUser/ServiceUser_Register';
 
 
 
@@ -17,8 +18,8 @@ function App() {
         <Route path='/login' element={<ServiceLogin/>}/>
         <Route path='/beds' element={<Beds/>}/>
         <Route path='/homeUser' element={<HomeUser/>}/>
+        <Route path='/registerUser' element={<ServiceUser_Register/>}/>
       </Routes>
-
     </div>
 
   );
