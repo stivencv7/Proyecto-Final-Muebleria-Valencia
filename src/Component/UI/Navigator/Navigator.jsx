@@ -9,6 +9,8 @@ export const Navigator = () => {
         <Link to="/productsInterface"><span>Productos</span></Link>
         <br />
         <Link to="/login"><span>Iniciar sesion</span></Link>
+        <br />
+        <Link to='/registerUser'><span>Registrarse</span></Link>
     </nav>
   )
 }
