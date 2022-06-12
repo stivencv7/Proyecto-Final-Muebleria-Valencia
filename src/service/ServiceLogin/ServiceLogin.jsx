@@ -1,10 +1,14 @@
 import React,{useState} from 'react'
+import { Navigate, Route, useNavigate } from 'react-router'
 import { FormLogin } from '../../Component/Layout/FormLogin/FormLogin'
+import { HomeUser } from '../../Component/UI/Home/HomeUser'
 
 export const ServiceLogin = () => {
   
     const [email , setEmail] = useState("")
     const [password , setPassword] = useState("")
+    const navigate = useNavigate();
+    let username2 = "";
 
     const catchEmail = (even) => {
         setEmail(even.target.value)
@@ -29,9 +33,10 @@ export const ServiceLogin = () => {
         .then(response => response.json())
         .then(data => {
             if(data.cedula != ""){
-                alert("FUNCIONA")
+                navigate("/homeUser")
+                console.log("Inicio sesion");
             }else{
-                alert("NO FUNCIONA")
+                alert("Correo o contraseña incorrecta")
             }
         })
         .catch(error => console.error(error))
