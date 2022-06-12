@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import { FormLogin } from '../../Component/Layout/FormLogin/FormLogin'
 
-
 export const ServiceLogin = () => {
   
     const [email , setEmail] = useState("")
@@ -15,20 +14,31 @@ export const ServiceLogin = () => {
         setPassword(even.target.value)
     }
 
-    function login (){
+    const login = () =>{
         const URLLogin = "http://localhost:8080/clientes/iniciarSesion/"
-        console.log(email + password);
-        fetch(URLLogin + email + "/" + password , {
-            method:'POST',
-            headers:{
+        fetch(URLLogin + email + "/" + password,{
+            method: 'POST',
+            headers: {
                 "Content-type": "application/json"
+            },
+            body: JSON.stringify({
+                correo: email,
+                contraseña: password
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.cedula != ""){
+                alert("FUNCIONA")
+            }else{
+                alert("NO FUNCIONA")
             }
         })
-        .then(response => response)
-        .then(json => check(json.ok))
         .catch(error => console.error(error))
-
     }
+
+    const URLBase = "http://localhost:8080/clientes/usuarios";
+
 
     function check(element) {
         if (element == true) {
