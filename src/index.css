@@ -40,12 +40,6 @@ code {
   line-height: 3.5rem;
 }
 
-#categories li a:hover,
-#categories li a:focus {
-  background: rgb(255, 94, 0);
-  color: #fff;
-}
-
 #categories li ul {
   position: absolute;
   width: 0;
@@ -66,15 +60,42 @@ code {
   border-top: 1px solid #e5e5e5;
   background: #0d50e0;
 }
-#categories li li a:hover,
-#categories li li a:focus {
-  background: rgb(255, 94, 0); 
-}
+
 
 #categories li:hover ul,
 #categories li:focus ul {
     width: 100%;
     z-index: 5;
     margin: 0 -4rem -4rem -4rem;
-    padding: 0 4rem 4rem 4rem;
+    padding-left: 2rem;
+}
+
+.links{
+  background-color: black;
+  color: white;
+  margin-left: 14%;
+  padding-left: 1px;
+}
+
+.links:hover,
+.links:focus {
+  display: block;
+  border-top: 1px solid #e5e5e5;
+  background: rgb(204, 197, 197);
+}
+
+.products{
+  height: 20rem;
+}
+
+.products_Container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.products_Container p{
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 15px;
 }

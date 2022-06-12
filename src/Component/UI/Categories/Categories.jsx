@@ -1,6 +1,7 @@
 import React from 'react'
 import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 export const Categories = () => {
      
@@ -10,8 +11,8 @@ export const Categories = () => {
             <li>
                 <a href="">Categorias</a>
                 <ul>
-                    <li><a href="">Camas</a></li>
-                    <li><a href="">Muebles</a></li>
+                    <Link to='/beds' className='links'>Camas</Link>
+                    <Link to='/furniture' className=''>Muebles</Link>
                 </ul>
             </li>
         </ul>

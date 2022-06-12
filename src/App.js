@@ -3,6 +3,8 @@ import { Home } from './Component/UI/Home/Home';
 import { Route , Routes} from "react-router-dom";
 import { ProductsInterface } from './Component/Layout/ProductsInterface/ProductsInterface';
 import { ServiceLogin } from './service/ServiceLogin/ServiceLogin';
+import { Beds } from './Component/UI/Beds/Beds';
+import { HomeUser } from './Component/UI/Home/HomeUser';
 
 
 
@@ -13,6 +15,8 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/productsInterface' element={<ProductsInterface/>}/>
         <Route path='/login' element={<ServiceLogin/>}/>
+        <Route path='/beds' element={<Beds/>}/>
+        <Route path='/homeUser' element={<HomeUser/>}/>
       </Routes>
 
     </div>
