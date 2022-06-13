@@ -54,9 +54,11 @@ export const ServiceLogin = () => {
     }
 
     return (
-        <div>
+        <div className='form'>
             <FormLogin onChange1={catchEmail} onChange2={catchPassword} action={login}/>
-            <button type="button" id="Login" onClick={login}>Enviar</button>
+            <br />
+            <button type="button" id="Login" onClick={login} className='btnLogin'>Enviar</button>
+            <br /><br />
         </div>
     )
 }
