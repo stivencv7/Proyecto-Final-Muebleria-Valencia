@@ -6,6 +6,7 @@ import { ServiceLogin } from './service/ServiceLogin/ServiceLogin';
 import { Beds } from './Component/UI/Beds/Beds';
 import { HomeUser } from './Component/UI/Home/HomeUser';
 import { ServiceUser_Register } from './service/ServiceUser/ServiceUser_Register';
+import { Furniture } from './Component/UI/Furniture/Furniture';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/beds' element={<Beds/>}/>
         <Route path='/homeUser' element={<HomeUser/>}/>
         <Route path='/registerUser' element={<ServiceUser_Register/>}/>
+        <Route path='/furniture' element={<Furniture/>}/>
       </Routes>
     </div>
 

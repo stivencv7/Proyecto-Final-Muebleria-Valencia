@@ -3,7 +3,8 @@ import React from 'react'
 export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, onChange5, onChange6, onChange7, onChange8, onClick }) => {
   return (
     <div>
-        <div id='informacion'>
+        <div id='informacion' className='form'>
+          <br />
             <form>
                 <input type="hidden" id="code_user"  onChange={onChange1} /> 
                 <label>Nombres</label>
@@ -31,6 +32,7 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
                     <input type="button" value="Registrar Usuario" onClick={onClick} />     
                 </div>
             </form>
+            <br />
         </div>
     </div>
   )
