@@ -64,7 +64,7 @@ export const ServiceUser_Register = () => {
             password: password_user,
         })
     })
-        .then(response => console.log(response.json()))
+        .then(response => response.json())
         .then(json => check(json.ok))
 
   }
