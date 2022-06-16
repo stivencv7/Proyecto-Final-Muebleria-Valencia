@@ -4,30 +4,98 @@ import img from '../../../Images/cama1.jpg'
 import img2 from '../../../Images/cama2.PNG'
 import img3 from '../../../Images/cama3.jpg'
 
+
+
+
+
 export const Beds = () => {
+
+  function pintar(){
+    document.getElementById("img1").classList.remove("despintar")
+    document.getElementById("p1").classList.remove("despintar")
+    document.getElementById("img1").classList.add("pintar")
+    document.getElementById("p1").classList.add("pintar")
+    console.log("INGRESA AL EVENTO");
+    }
+
+  function despintar(){
+    document.getElementById("p1").classList.remove("pintar")
+    document.getElementById("img1").classList.remove("pintar")
+    document.getElementById("img1").classList.add("despintar")
+    document.getElementById("p1").classList.add("despintar")
+    console.log("SALE DEL EVENTO");
+  }
+
+  function pintar2(){
+    document.getElementById("img2").classList.remove("despintar")
+    document.getElementById("p2").classList.remove("despintar")
+    document.getElementById("img2").classList.add("pintar")
+    document.getElementById("p2").classList.add("pintar")
+    console.log("INGRESA AL EVENTO");
+    }
+
+  function despintar2(){
+    document.getElementById("p2").classList.remove("pintar")
+    document.getElementById("img2").classList.remove("pintar")
+    document.getElementById("p2").classList.add("despintar")
+    document.getElementById("img2").classList.add("despintar")
+    console.log("SALE DEL EVENTO");
+  }
+
+  function pintar3(){
+    document.getElementById("p3").classList.remove("despintar")
+    document.getElementById("img3").classList.remove("despintar")
+    document.getElementById("p3").classList.add("pintar")
+    document.getElementById("img3").classList.add("pintar")
+    console.log("INGRESA AL EVENTO");
+    }
+
+  function despintar3(){
+    document.getElementById("p3").classList.remove("pintar")
+    document.getElementById("img3").classList.remove("pintar")
+    document.getElementById("p3").classList.add("despintar")
+    document.getElementById("img3").classList.add("despintar")
+    console.log("SALE DEL EVENTO");
+  }
+
   return (
     <div>
-        <h1>Camas disponibles</h1>
+        <h1>CAMAS DISPONIBLES</h1>
         <br />
         <div className='products_Container'>
-            <Comp_Img
+            <Comp_Img className="tarjeta" 
             url={img}
-            description="cama"
+            evento={pintar}
+            evento2={despintar} 
+            description="cama" 
+            ids="img1"
+            ids2="p1"
+            text={"Combo elaborado en tela gris de buena calidad. Diseño moderno y simple ideal para todo tipo de ambientes. 140x190"}
+            text2={"Cantidad disponible: 10"}
             />
-            <p>Combo elaborado en tela gris de buena calidad. Diseño moderno y simple ideal para todo tipo de ambientes. 140x190</p>
-            <p>Cantidad disponible: 10</p>
-            <Comp_Img
+            <br/>
+            <Comp_Img className="tarjeta"
             url={img2}
+            evento={pintar2}
+            evento2={despintar2}
+            ids="img2"
+            ids2="p2"
             description="cama2"
+            text={"Cama Doble Liviana Duna Hogar Venecia"}
+            text2={"Cantidad disponible: 7"}
             />
-            <p>CAMA DOBLE LIBIA DUNA Hogar Venecia La cama Libia brinda una sensación incomparable de sofisticación y estilo. Cabecero fabricado en madera aglomerado MDP 15 mm con reengruese en madera MDF de 18 mm, estructura en aglomerado MDP con reengruese en MDF, acabados en canto flexible, tendido en madera pino natural y 2 patas en madera pino inmune al gorgojo.</p>
-            <p>Cantidad disponible: 7</p>
-            <Comp_Img
+            <br/>
+            <Comp_Img className="tarjeta"
             url={img3}
+            evento={pintar3}
+            evento2={despintar3}
             description="cama3"
+            ids="img3"
+            ids2="p3"
+            text={"Base Cama: 190 cm largo x 140 cm ancho x 35 cm alto."+
+            "Cabecero: 160 cm alto x 140 cm ancho x 8 cm largo."}
+            text2={"Cantidad disponible: 16"}
             />
-            <p>Base Cama: 190 cm largo x 140 cm ancho x 35 cm alto. Cabecero: 160 cm alto x 140 cm ancho x 8 cm largo.</p>
-            <p>Cantidad disponible: 16</p>
         </div>
     </div>
   )
