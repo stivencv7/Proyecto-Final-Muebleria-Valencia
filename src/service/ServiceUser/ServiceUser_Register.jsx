@@ -3,7 +3,7 @@ import { FormRegisterUsers } from '../../Component/Layout/FormRegisterUsers/Form
 
 export const ServiceUser_Register = () => {
   
-  const [codeUser, setCodeUser] = useState(3)
+  const [codeUser, setCodeUser] = useState(0)
   const [name_user, setUserName] = useState("")
   const [surname_user, setSurnameUser] = useState("")
   const [idUser, setIdUser] = useState("")
@@ -56,15 +56,15 @@ export const ServiceUser_Register = () => {
         body: JSON.stringify({
             codigo: codeUser,
             cedula: idUser,
-            nombreCli: name_user,
+            nombre_cli: name_user,
             apellidoCli: surname_user,
             fechaNaciminCli: dateBirthUser,
             celular: cellphonenumber_user,
-            correoCli: email_user,
+            correo_cli: email_user,
             password: password_user,
         })
     })
-        .then(response => response)
+        .then(response => response.json())
         .then(json => check(json.ok))
 
   }
