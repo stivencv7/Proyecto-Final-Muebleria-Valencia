@@ -56,15 +56,15 @@ export const ServiceUser_Register = () => {
         body: JSON.stringify({
             codigo: codeUser,
             cedula: idUser,
-            nombre_cli: name_user,
+            nombreCli: name_user,
             apellidoCli: surname_user,
             fechaNaciminCli: dateBirthUser,
             celular: cellphonenumber_user,
-            correo_cli: email_user,
+            correoCli: email_user,
             password: password_user,
         })
     })
-        .then(response => response.json())
+        .then(response => response)
         .then(json => check(json.ok))
 
   }
