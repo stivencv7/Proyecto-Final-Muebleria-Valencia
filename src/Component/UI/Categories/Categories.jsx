@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-import { Sidebar } from 'primereact/sidebar';
-import { Button } from 'primereact/button'
+
 
 export const Categories = () => {
 
