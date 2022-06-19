@@ -1,14 +1,12 @@
 import React,{useState} from 'react'
 import { Navigate, Route, useNavigate } from 'react-router'
 import { FormLogin } from '../../Component/Layout/FormLogin/FormLogin'
-import { HomeUser } from '../../Component/UI/Home/HomeUser'
 
 export const ServiceLogin = () => {
   
     const [email , setEmail] = useState("")
     const [password , setPassword] = useState("")
     const navigate = useNavigate();
-    let username2 = "";
 
     const catchEmail = (even) => {
         setEmail(even.target.value)
@@ -54,7 +52,7 @@ export const ServiceLogin = () => {
     }
 
     return (
-        <div className='form'>
+        <div className='formLogin'>
             <FormLogin onChange1={catchEmail} onChange2={catchPassword} action={login}/>
             <br />
             <button type="button" id="Login" onClick={login} className='btnLogin'>Enviar</button>

@@ -27,9 +27,10 @@ export const ServiceProduct_Search = () => {
 
     return (
     <div>
+        <br />
          <Comp_Input id='input_buscar' type="number"/>
-        <button onClick={searchForID}>buscar</button>
-        <hr />
+        <button onClick={searchForID} className='btnSearchProduct'>Buscar</button>
+        <br />
         <GetProduct productFound={productFound}  />
     </div>
   )
