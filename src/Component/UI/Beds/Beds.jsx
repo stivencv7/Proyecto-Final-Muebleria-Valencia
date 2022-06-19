@@ -15,7 +15,6 @@ export const Beds = () => {
     document.getElementById("p1").classList.remove("despintar")
     document.getElementById("img1").classList.add("pintar")
     document.getElementById("p1").classList.add("pintar")
-    console.log("INGRESA AL EVENTO");
     }
 
   function despintar(){
@@ -23,7 +22,6 @@ export const Beds = () => {
     document.getElementById("img1").classList.remove("pintar")
     document.getElementById("img1").classList.add("despintar")
     document.getElementById("p1").classList.add("despintar")
-    console.log("SALE DEL EVENTO");
   }
 
   function pintar2(){
@@ -31,7 +29,6 @@ export const Beds = () => {
     document.getElementById("p2").classList.remove("despintar")
     document.getElementById("img2").classList.add("pintar")
     document.getElementById("p2").classList.add("pintar")
-    console.log("INGRESA AL EVENTO");
     }
 
   function despintar2(){
@@ -39,7 +36,6 @@ export const Beds = () => {
     document.getElementById("img2").classList.remove("pintar")
     document.getElementById("p2").classList.add("despintar")
     document.getElementById("img2").classList.add("despintar")
-    console.log("SALE DEL EVENTO");
   }
 
   function pintar3(){
@@ -47,7 +43,6 @@ export const Beds = () => {
     document.getElementById("img3").classList.remove("despintar")
     document.getElementById("p3").classList.add("pintar")
     document.getElementById("img3").classList.add("pintar")
-    console.log("INGRESA AL EVENTO");
     }
 
   function despintar3(){
@@ -55,12 +50,11 @@ export const Beds = () => {
     document.getElementById("img3").classList.remove("pintar")
     document.getElementById("p3").classList.add("despintar")
     document.getElementById("img3").classList.add("despintar")
-    console.log("SALE DEL EVENTO");
   }
 
   return (
     <div>
-        <h1>CAMAS DISPONIBLES</h1>
+        <h1 className='title_Beds'>CAMAS DISPONIBLES</h1>
         <br />
         <div className='products_Container'>
             <Comp_Img className="tarjeta" 
