@@ -6,11 +6,11 @@ export const HomeAdmin = () => {
     <div>
         <div className='homeAdminNavigator'>
           <br/>
-          <Link to="/productsInterface" className='linksHomeAdmin'><span>Productos</span></Link>
+          <Link to="/productsInterface" className='list-group-item-admin'><span>Productos</span></Link>
           <br />
-          <Link to="/usersInterface" className='linksHomeAdmin'><span>Usuarios</span></Link>
+          <Link to="/usersInterface" className='list-group-item-admin'><span>Usuarios</span></Link>
           <br />
-          <Link to="/suppliersInterface" className='linksHomeAdmin'><span>Proveedores</span></Link>
+          <Link to="/suppliersInterface" className='list-group-item-admin'><span>Proveedores</span></Link>
         </div>
         <div className='manual'>
           <h1>Manual de uso</h1>

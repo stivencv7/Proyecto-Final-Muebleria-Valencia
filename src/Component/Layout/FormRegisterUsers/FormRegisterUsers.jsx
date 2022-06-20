@@ -1,6 +1,5 @@
 import React from 'react'
-import imgUser from '../../../Images/user1.jpg'
-import imgSucess from '../../../Images/aprobacion.jpg'
+import 'primeicons/primeicons.css';
 
 export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, onChange5, onChange6, onChange7, onChange8, onClick }) => {
   
@@ -30,7 +29,6 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
       document.getElementById("btnRegister").classList.remove("btnRegister")
       document.getElementById("btnBack").classList.remove("btnBack")
       document.getElementById("btnBack").classList.add("btnBack2")
-      document.getElementById("imgUser1").setAttribute("src",imgSucess)
       document.getElementById("container_ImgUsers").classList.add("imgUsersNext")
       document.getElementById("container_ImgUsers").classList.remove("container_ImgUsers")
       document.getElementById("titleUserData").textContent = "Paso 2";
@@ -63,7 +61,7 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
       document.getElementById("btnRegister").classList.add("btnRegister")
       document.getElementById("btnBack").classList.add("btnBack")
       document.getElementById("btnBack").classList.remove("btnBack2")
-      document.getElementById("imgUser1").setAttribute("src",imgUser)
+      document.getElementById("iconUser1").setAttribute("className","pi pi-user")
       document.getElementById("container_ImgUsers").classList.remove("imgUsersNext")
       document.getElementById("container_ImgUsers").classList.add("container_ImgUsers")
       document.getElementById("titleUserData").textContent = "Paso 1";
@@ -72,9 +70,9 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
   return (
     <div>
       <div className='container_ImgUsers' id='container_ImgUsers'>
-        <img src={imgUser} alt="" className='imgUser1' id='imgUser1'/>        
+        <i className="pi pi-user" id="iconUser1" style={{'fontSize': '2em'}}></i>
         <p>Lorem ipsum dolor, sit amet consectetur</p>
-        <img src={imgUser} alt="" className='imgUser1'/>
+        <i className="pi pi-user" style={{'fontSize': '2em'}}></i>
       </div>
         <div id='data' className='form'>
           <br />
