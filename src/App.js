@@ -7,8 +7,9 @@ import { Beds } from './Component/UI/Beds/Beds';
 import { HomeUser } from './Component/UI/Home/HomeUser';
 import { ServiceUser_Register } from './service/ServiceUser/ServiceUser_Register';
 import { Furniture } from './Component/UI/Furniture/Furniture';
-
-
+import { HomeAdmin } from './Component/UI/Home/HomeAdmin';
+import { UsersInterface } from './Component/Layout/UsersInterface/UsersInterface';
+import { SuppliersInterface } from './Component/Layout/SuppliersInterface/SuppliersInterface';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <Route path='/homeUser' element={<HomeUser/>}/>
         <Route path='/registerUser' element={<ServiceUser_Register/>}/>
         <Route path='/furniture' element={<Furniture/>}/>
+        <Route path='/homeAdmin' element={<HomeAdmin/>}/>
+        <Route path='/usersInterface' element={<UsersInterface/>}/>
+        <Route path='/suppliersInterface' element={<SuppliersInterface/>}/>
       </Routes>
     </div>
 

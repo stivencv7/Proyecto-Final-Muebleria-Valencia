@@ -568,3 +568,43 @@ code {
   color: white;
   padding-bottom: 2%;
 }
+
+.btnRegisterSupplier{
+  float: right;
+  color: #fff;
+  margin-right: 44%;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.homeAdminNavigator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(1, 71, 1, 0.671);
+  padding: 2rem;
+}
+
+.linksHomeAdmin{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.manual{
+  text-align: center;
+  margin-top: 5%;
+  border: solid 3px rgba(1, 71, 1, 0.671);
+}
