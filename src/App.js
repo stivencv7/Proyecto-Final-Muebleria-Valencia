@@ -10,6 +10,7 @@ import { Furniture } from './Component/UI/Furniture/Furniture';
 import { HomeAdmin } from './Component/UI/Home/HomeAdmin';
 import { UsersInterface } from './Component/Layout/UsersInterface/UsersInterface';
 import { SuppliersInterface } from './Component/Layout/SuppliersInterface/SuppliersInterface';
+import { ShoppingCart } from './Component/UI/ShoppingCart/ShoppingCart';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/homeAdmin' element={<HomeAdmin/>}/>
         <Route path='/usersInterface' element={<UsersInterface/>}/>
         <Route path='/suppliersInterface' element={<SuppliersInterface/>}/>
+        <Route path='/shoppingCart' element={<ShoppingCart/>}/>
       </Routes>
     </div>
 

@@ -15,13 +15,17 @@ export const Beds = () => {
     document.getElementById("p1").classList.remove("despintar")
     document.getElementById("img1").classList.add("pintar")
     document.getElementById("p1").classList.add("pintar")
-    }
+    document.getElementById("p4").classList.add("pintar")
+    document.getElementById("p4").classList.remove("despintar")  
+  }
 
   function despintar(){
     document.getElementById("p1").classList.remove("pintar")
     document.getElementById("img1").classList.remove("pintar")
     document.getElementById("img1").classList.add("despintar")
     document.getElementById("p1").classList.add("despintar")
+    document.getElementById("p4").classList.remove("pintar")
+    document.getElementById("p4").classList.add("despintar")
   }
 
   function pintar2(){
@@ -60,12 +64,14 @@ export const Beds = () => {
             <Comp_Img className="tarjeta" 
             url={img}
             evento={pintar}
-            evento2={despintar} 
+            evento2={despintar}
             description="cama" 
             ids="img1"
             ids2="p1"
             text={"Combo elaborado en tela gris de buena calidad. Diseño moderno y simple ideal para todo tipo de ambientes. 140x190"}
             text2={"Cantidad disponible: 10"}
+            ids3="p4"
+            textButton={"Agregar al carrito"}
             />
             <br/>
             <Comp_Img className="tarjeta"

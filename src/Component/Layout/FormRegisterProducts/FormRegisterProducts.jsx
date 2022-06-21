@@ -1,5 +1,7 @@
-
 import React from 'react';
+import { InputNumber } from 'primereact/inputnumber';
+import icons from '../../../Images/iconosMuebles.jpg'
+
 export const FormRegisterProducts = ({ onChange1, onChange2, onChange3, onChange4, onClick }) => {
     return (
         <div>
@@ -15,14 +17,17 @@ export const FormRegisterProducts = ({ onChange1, onChange2, onChange3, onChange
                     <textarea id='text' placeholder='descripcion' className='form-control2' onChange={onChange3} ></textarea>
                     <br />
                     <label className='input-group-text'>Precio</label>
-                    <input type="number" id='press' className='form-control2' onChange={onChange4} /> 
+                    <input type="number" id='press' className='form-control2' onChange={onChange4} />
                     <br /><br />
                     <div>
                          <input type="button" value="Registrar Producto" className='btnRegisterProduct' onClick={onClick} /> 
                     </div>
                 </form>
+                <img src={icons} alt="" className='iconsProducts'/>
+                
                 <br />
             </div>
+            <div className='clear'></div>
             <hr />
         </div>
     )
