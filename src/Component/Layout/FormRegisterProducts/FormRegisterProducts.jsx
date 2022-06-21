@@ -1,5 +1,6 @@
 import React from 'react';
 import { InputNumber } from 'primereact/inputnumber';
+import icons from '../../../Images/iconosMuebles.jpg'
 
 export const FormRegisterProducts = ({ onChange1, onChange2, onChange3, onChange4, onClick }) => {
     return (
@@ -22,8 +23,11 @@ export const FormRegisterProducts = ({ onChange1, onChange2, onChange3, onChange
                          <input type="button" value="Registrar Producto" className='btnRegisterProduct' onClick={onClick} /> 
                     </div>
                 </form>
+                <img src={icons} alt="" className='iconsProducts'/>
+                
                 <br />
             </div>
+            <div className='clear'></div>
             <hr />
         </div>
     )

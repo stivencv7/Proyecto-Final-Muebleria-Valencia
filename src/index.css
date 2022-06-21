@@ -483,6 +483,7 @@ code {
   border: solid 4px rgba(1, 71, 1, 0.671);
   width: 50%;
   margin-left: 25%;
+  height: 35rem;
 }
 
 
@@ -668,4 +669,27 @@ code {
   color: white;
   padding-bottom: 2%;
   margin-bottom: -2%;
+}
+
+.iconsProducts{
+  width: 45%;
+  height: 15rem;
+  margin-left: 55%;
+  margin-top: -40%;
+}
+
+.clear{
+  clear: both;
+}
+
+#name_product{
+  width: 35%;
+}
+
+#text{
+  width: 35%;
+}
+
+#press{
+  width: 35%;
 }
