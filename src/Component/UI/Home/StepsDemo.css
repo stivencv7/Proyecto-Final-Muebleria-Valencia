@@ -1,0 +1,72 @@
+.steps-demo .p-steps {
+    height: 50px;
+}
+.steps-demo{
+    margin-bottom: -5%;
+}
+.steps-demo .p-steps > ul {
+    flex-direction: column;
+    height: 100%;
+}
+.card{
+    border: solid 4px white;
+}
+.steps-demo .p-steps > ul .p-steps-item {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+}
+.steps-demo .p-steps > ul .p-steps-item:before {
+    position: static;
+    left: auto;
+    top: auto;
+    margin-top: 0;
+    border-left: 1px solid var(--surface-d);
+    border-top: 0 none;
+    width: auto;
+    height: 100%;
+    margin-left: 1rem;
+}
+.steps-demo .p-steps > ul .p-steps-item {
+    flex-direction: row;
+    overflow: visible;
+    margin-bottom: 2%;
+}
+.steps-demo .p-steps > ul .p-steps-item .p-menuitem-link .p-steps-title {
+    margin: 0 .5rem 0;
+}
+.steps-demo .p-steps > ul .p-steps-item .p-menuitem-link {
+    margin: 0;
+}
+.steps-demo .p-steps > ul .p-steps-item:last-child {
+    flex-grow: 0;
+}
+.steps-demo .p-steps > ul .p-steps-item:last-child .p-menuitem-link {
+    padding: 0;
+    text-decoration: none;
+    color: rgb(165, 3, 3);
+}
+.steps-demo .p-steps > ul .p-steps-item:first-child .p-menuitem-link {
+    padding: 0;
+    text-decoration: none;
+    float: left;
+    margin-left: 34%;
+    color: rgb(165, 3, 3);
+}
+.steps-demo .p-steps > ul .p-steps-item:last-child:before {
+    display: none;
+    float: right;
+}
+
+#pi-user1{
+    margin-left: -22%;
+    margin-bottom: -3.5%;
+}
+
+#pi-user2{
+    margin-right: -42%;
+    margin-top: 2%;
+    margin-bottom: -2%;
+}
+                 

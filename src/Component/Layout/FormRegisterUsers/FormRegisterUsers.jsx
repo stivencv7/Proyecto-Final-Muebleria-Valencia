@@ -1,5 +1,7 @@
 import React from 'react'
 import 'primeicons/primeicons.css';
+import { Pruebas } from '../../UI/Home/Pruebas';
+import user from '../../../Images/registro.webp'
 
 export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, onChange5, onChange6, onChange7, onChange8, onClick }) => {
   
@@ -29,10 +31,12 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
       document.getElementById("btnRegister").classList.remove("btnRegister")
       document.getElementById("btnBack").classList.remove("btnBack")
       document.getElementById("btnBack").classList.add("btnBack2")
-      document.getElementById("container_ImgUsers").classList.add("imgUsersNext")
-      document.getElementById("container_ImgUsers").classList.remove("container_ImgUsers")
       document.getElementById("titleUserData").textContent = "Paso 2";
       document.getElementById("subtitleUserData").textContent = "Informacion para el registro del usuario";
+      document.getElementById("userImg").classList.add("userImgNext")
+      document.getElementById("userImg").classList.remove("userImg")
+      document.getElementById("container_Steps").classList.remove("container_Steps")
+      document.getElementById("container_Steps").classList.add("container_Steps2")
     }
 
     const back = () => {
@@ -61,18 +65,16 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
       document.getElementById("btnRegister").classList.add("btnRegister")
       document.getElementById("btnBack").classList.add("btnBack")
       document.getElementById("btnBack").classList.remove("btnBack2")
-      document.getElementById("iconUser1").setAttribute("className","pi pi-user")
-      document.getElementById("container_ImgUsers").classList.remove("imgUsersNext")
-      document.getElementById("container_ImgUsers").classList.add("container_ImgUsers")
       document.getElementById("titleUserData").textContent = "Paso 1";
       document.getElementById("subtitleUserData").textContent = "Informacion acerca del usuario";
+      document.getElementById("userImg").classList.remove("userImgNext")
+      document.getElementById("userImg").classList.add("userImg")
+      document.getElementById("container_Steps").classList.remove("container_Steps2")
     }
   return (
     <div>
-      <div className='container_ImgUsers' id='container_ImgUsers'>
-        <i className="pi pi-user" id="iconUser1" style={{'fontSize': '2em'}}></i>
-        <p>Lorem ipsum dolor, sit amet consectetur</p>
-        <i className="pi pi-user" style={{'fontSize': '2em'}}></i>
+      <div className='container_Steps' id='container_Steps'>
+        <Pruebas/>
       </div>
         <div id='data' className='form'>
           <br />
@@ -96,6 +98,7 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
                 <label id='cellphonenumber_user' className='input-group-text'>Numero celular</label>
                 <input type="text" id='cellphonenumber_user2' className='form-control2' onChange={onChange6} />
                 <br /><br />
+                <img src={user} alt="" className='userImg' id='userImg'/>
                 <label id='email_user' className='hide'>Correo</label>
                 <input type="email" id='email_user2' className='hide' onChange={onChange7} />
                 <label  id='password_user' className='hide'>Contraseña</label>
