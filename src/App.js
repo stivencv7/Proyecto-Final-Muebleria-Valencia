@@ -11,6 +11,11 @@ import { HomeAdmin } from './Component/UI/Home/HomeAdmin';
 import { UsersInterface } from './Component/Layout/UsersInterface/UsersInterface';
 import { SuppliersInterface } from './Component/Layout/SuppliersInterface/SuppliersInterface';
 import { ShoppingCart } from './Component/UI/ShoppingCart/ShoppingCart';
+import { FormRegister } from './Component/Layout/FormRegisterUsers/FormRegister';
+import 'primereact/resources/themes/vela-green/theme.css'
+import "primereact/resources/primereact.min.css";  
+import "primeicons/primeicons.css"; 
+import "primereact/resources/themes/lara-light-indigo/theme.css"
 
 function App() {
   return (
@@ -21,7 +26,7 @@ function App() {
         <Route path='/login' element={<ServiceLogin/>}/>
         <Route path='/beds' element={<Beds/>}/>
         <Route path='/homeUser' element={<HomeUser/>}/>
-        <Route path='/registerUser' element={<ServiceUser_Register/>}/>
+        <Route path='/registerUser' element={<FormRegister/>}/>
         <Route path='/furniture' element={<Furniture/>}/>
         <Route path='/homeAdmin' element={<HomeAdmin/>}/>
         <Route path='/usersInterface' element={<UsersInterface/>}/>
