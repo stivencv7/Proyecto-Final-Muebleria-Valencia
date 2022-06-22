@@ -2,6 +2,7 @@ import React from 'react'
 import { Categories } from '../Categories/Categories'
 import { Navigator } from '../Navigator/Navigator'
 import { Comp_Input } from '../Comp_Input/Comp_Input' 
+import { Pruebas } from './Pruebas'
 
 export const Home = () => {
   return (
