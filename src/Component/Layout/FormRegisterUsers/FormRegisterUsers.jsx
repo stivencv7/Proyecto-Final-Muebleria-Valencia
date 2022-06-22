@@ -2,6 +2,7 @@ import React from 'react'
 import 'primeicons/primeicons.css';
 import { Pruebas } from '../../UI/Home/Pruebas';
 import user from '../../../Images/registro.webp'
+import { InputText } from 'primereact/inputtext';
 
 export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, onChange5, onChange6, onChange7, onChange8, onClick }) => {
   
@@ -71,6 +72,7 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
       document.getElementById("userImg").classList.add("userImg")
       document.getElementById("container_Steps").classList.remove("container_Steps2")
     }
+    
   return (
     <div>
       <div className='container_Steps' id='container_Steps'>
@@ -84,7 +86,7 @@ export const FormRegisterUsers = ({ onChange1, onChange2, onChange3, onChange4, 
             <form>
                 <input type="hidden" id="code_user" onChange={onChange1} /> 
                 <label id='name_user' className='input-group-text'>Nombres</label>
-                <input type="text" id='name_user2' className='form-control2' onChange={onChange2} />
+                <InputText tooltip="Ingresa tu nombre"  id='name_user2' className='form-control2' onChange={onChange2} />
                 <br /><br />
                 <label id='surname_user' className='input-group-text'>Apellidos</label>
                 <input type="text" id='surname_user2' className='form-control2' onChange={onChange3} />

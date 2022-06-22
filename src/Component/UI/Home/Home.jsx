@@ -2,9 +2,10 @@ import React from 'react'
 import { Categories } from '../Categories/Categories'
 import { Navigator } from '../Navigator/Navigator'
 import { Comp_Input } from '../Comp_Input/Comp_Input' 
-import { Pruebas } from './Pruebas'
+import { Tips } from './Tips'
 
 export const Home = () => {
+ 
   return (
     <div>
       <div>
@@ -14,6 +15,8 @@ export const Home = () => {
         <div>
           <Comp_Input type="number" />
           <Comp_Input type="number"/>
+        </div>
+        <div>
         </div>
     </div>
   )
