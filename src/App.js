@@ -16,6 +16,8 @@ import 'primereact/resources/themes/vela-green/theme.css'
 import "primereact/resources/primereact.min.css";  
 import "primeicons/primeicons.css"; 
 import "primereact/resources/themes/lara-light-indigo/theme.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CarouselDemo from './Component/Layout/Carousel/Carousel';
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
         <Route path='/usersInterface' element={<UsersInterface/>}/>
         <Route path='/suppliersInterface' element={<SuppliersInterface/>}/>
         <Route path='/shoppingCart' element={<ShoppingCart/>}/>
+        <Route path='/carousel' element={<CarouselDemo/>}/>
       </Routes>
     </div>
 
