@@ -1,0 +1,5 @@
+.p-sortable-column{
+    background-image: url('../../../Images/madera.webp') !important;
+    background-size: cover;
+    border-right: solid 2px rgba(1, 71, 1, 0.671) !important;
+}

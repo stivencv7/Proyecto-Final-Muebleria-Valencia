@@ -34,6 +34,12 @@
     border: solid 1px  rgb(0,189,72);
 }
 
+.p-fluid .p-inputtext:focus{
+    
+    box-shadow: 1px 1px 3px 1px rgb(0,189,72);
+    border: 2px solid rgb(121, 206, 154);
+}
+
 .p-button-label{
     color: black;
 }
@@ -43,4 +49,5 @@
 
 .p-float-label:focus{
     border: solid 10000003px rgb(0,189,72) !important;
+
 }

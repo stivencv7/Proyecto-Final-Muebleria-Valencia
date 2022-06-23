@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-
+import './users.css'
 
 export class DataTableUsers extends Component {
 
