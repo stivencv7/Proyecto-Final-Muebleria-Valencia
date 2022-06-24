@@ -1,9 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import"./HomeAdmin.css"
+
 
 export const HomeAdmin = () => {
   return (
     <div>
+      <div>
+        <header className='header-admin'>
+          <h2>Menu Administrador</h2>
+          <nav className='icons'>
+          <Link className='icon' to="/"><i className="pi pi-home ico" ></i></Link>
+          </nav>
+        </header>
+      </div>
         <div className='homeAdminNavigator'>
           <br/>
           <Link to="/productsInterface" className='list-group-item-admin'><span>Productos</span></Link>
