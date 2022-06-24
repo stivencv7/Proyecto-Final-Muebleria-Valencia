@@ -1,0 +1,5 @@
+.p-datatable .p-datatable-thead > tr > th{
+    background-image: url('../../../Images/madera.webp') !important;
+    background-size: cover;
+    border: solid 2px rgba(1, 71, 1, 0.671) !important;
+}                 
