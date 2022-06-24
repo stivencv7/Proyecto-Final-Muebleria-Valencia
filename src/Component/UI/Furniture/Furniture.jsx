@@ -5,6 +5,7 @@ import img2 from '../../../Images/mueble2.PNG'
 import { DataViewFurniture } from './Furniture2'
 
 export const Furniture = () => {
+  
   function pintar(){
     document.getElementById("img1").classList.remove("despintar")
     document.getElementById("p1").classList.remove("despintar")

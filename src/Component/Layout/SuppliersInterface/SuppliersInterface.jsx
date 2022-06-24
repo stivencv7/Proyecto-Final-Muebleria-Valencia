@@ -1,7 +1,8 @@
 import React from 'react'
 // import { SuppliersList } from '../SuppliersList/SuppliersList'
 import { FormRegisterSuppliers } from '../FormRegisterSuppliers/FormRegisterSuppliers'
-import { SearchSupplier } from '../SearchSupplier/SearchSupplier'
+import { DataTableEditSuppliers } from '../SearchSupplier/EditSupplier'
+// import { SearchSupplier } from '../SearchSupplier/SearchSupplier'
 import { DataTableSortDemo } from '../SuppliersList/SuppliersList2'
 
 
@@ -13,7 +14,7 @@ export const SuppliersInterface = () => {
         </div>
         <br /><br /><hr />
         <div>
-            <SearchSupplier/>
+            <DataTableEditSuppliers/>
         </div>
         <br /><br /><hr />
         <div>
