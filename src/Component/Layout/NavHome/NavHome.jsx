@@ -27,7 +27,7 @@ export const NavHome = () => {
     return (
         <nav className='icons'>
             <Link className='icon' to="/"><i className="pi pi-home ico" ></i></Link> 
-            <Sidebar position='right' visible={visible2} style={{ width: '15em' }} onHide={() => setVisible2(false)}>
+            <Sidebar position='right' visible={visible2} style={{ width: '30em' }} onHide={() => setVisible2(false)}>
                
             </Sidebar>
             <div className="inf">
