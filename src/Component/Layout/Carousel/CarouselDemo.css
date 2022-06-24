@@ -1,3 +1,25 @@
 .container_Carousel{
-    background-color: black;
+    margin-top: 10px;
+    
+    
+   text-align: center;
+  
+   
+}
+.carousel_item{
+    display: flex !important;
+}
+
+.h3,h3{
+    
+    color: transparent !important;
+}
+img,svg{
+    width: 80% !important;
+   
+    height: 30em;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: rgb(66, 219, 66) !important;
+    border-radius: 100px;
 }

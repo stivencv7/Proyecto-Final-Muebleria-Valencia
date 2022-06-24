@@ -99,9 +99,9 @@ export const FormRegister = () => {
                 </div>
             </Dialog>
 
-            <div className="form_Register">
+            
                 <div className="card">
-                    <h5 className="text-center">Registro</h5>
+                   
                     <form onSubmit={formik.handleSubmit} className="p-fluid">
                         <div className="field">
                             <span className="p-float-label">
@@ -156,7 +156,7 @@ export const FormRegister = () => {
                         <div className="field">
                             <span className="p-float-label">
                                 <Calendar id="date" name="date" value={formik.values.date} onChange={formik.handleChange} className={classNames({ 'p-invalid': isFormFieldValid('date') })} dateFormat="dd/mm/yy" mask="99/99/9999" showIcon />
-                                <label htmlFor="date" className={classNames({ 'p-error': isFormFieldValid('date') })}>Birthday</label>
+                                <label htmlFor="date" className={classNames({ 'p-error': isFormFieldValid('date') })}>Fecha De Nacimiento</label>
                             </span>
                             {getFormErrorMessage('date')}
                         </div>
@@ -169,7 +169,7 @@ export const FormRegister = () => {
                         <Button type="submit" label="Registrar" className="mt-2" />
                     </form>
                 </div>
-            </div>
+            
         </div>
     );
 }
