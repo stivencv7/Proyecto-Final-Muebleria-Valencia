@@ -6,7 +6,7 @@ export const SubHeader = () => {
     
     const [visible, setVisible] = useState(false);
     return (
-        <div className='subHeader'>
+        <div className='subHeader' id='subHeader'>
              <Sidebar visible={visible} style={{ width: '15em' }} onHide={() => setVisible(false)}>
                 <div>
                     <label htmlFor="press">Precio maximo</label>
