@@ -615,7 +615,7 @@ code {
   margin-top: 5%;
   border: solid 3px rgba(1, 71, 1, 0.671);
 }
-
+/*
 .list-group-item-admin{
   position: relative;
   display: block;
@@ -627,7 +627,7 @@ code {
   background-color: #fff;
   border: 5px solid rgba(0,0,0,.125)
 }
-
+*/
 #p4{
   color: #fff;
   background-color: #0d6efd;
@@ -663,7 +663,9 @@ code {
   border-radius: 0.25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
+.titleProducts{
+  text-align: center;
+}
 .titleShoppingCart{
   background-color: rgba(1, 71, 1, 0.671);
   color: white;

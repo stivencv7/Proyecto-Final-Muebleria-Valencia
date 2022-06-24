@@ -8,18 +8,9 @@ import "./FormRegisterProducts.css"
 export const FormRegisterProducts = ({ onChange1, onChange2, onChange3, onChange4, onClick }) => {
     return (
         <div>
-            <div>
-                <header className='header-admin-product'>
-                    <Logo estylo={'title-main'}/>
-                    <h2>Menu producto</h2>
-                    <nav className='icons'>
-                        <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
-                    </nav>
-                </header>
-            </div>
             <br />
             <div id='informacion' className='form_Products'>
-            <h1>Registrar Producto</h1>
+            <h1 className='titleProducts'>Registrar Producto</h1>
                 <form>
                     <input type="hidden" id="idprodut" onChange={onChange1} /> 
                     <label className='input-group-text'>nombre</label>

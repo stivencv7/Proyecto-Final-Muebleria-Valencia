@@ -12,8 +12,8 @@ export const HomeAdmin = () => {
           <Logo estylo={'title-main'}/>
           <h2>Menu Administrador</h2>
           <nav className='icons'>
-          <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
-          <Link className='icon' to="/"><i className="pi pi-cog ico" ></i></Link>
+            <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
+            <Link className='icon' to="/"><i className="pi pi-cog ico" ></i></Link>
           </nav>
         </header>
       </div>
