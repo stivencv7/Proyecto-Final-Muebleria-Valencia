@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import { Dialog } from 'primereact/dialog';
 import { Sidebar } from 'primereact/sidebar/';
-
+import { Logo } from '../../UI/Logo/Logo';
+import { Button } from 'primereact/button';
 export const NavHome = () => {
 
     const [visible, setVisible] = useState(false)
@@ -19,7 +20,7 @@ export const NavHome = () => {
 
     const header=(
         <div className='div-login'>
-            <h3 className='title-login'>Inicio Sesion</h3>
+            <Logo estylo='title-login' text='Inicio Sesion'/>
        </div>
        
     )
@@ -49,7 +50,7 @@ export const NavHome = () => {
                         <input type="password" id='password' placeholder='password' style={{ width: '20em', height: '32px' }} />
                         
                     </div>
-                    <div><button className='button-login'>Iniciar Sesion</button></div>
+                    <div><Button className='button-login'>Iniciar Sesión</Button></div>
                     
                    
                     <Link  to="/registerUser">¿No tienes una cuenta? Registrar</Link>

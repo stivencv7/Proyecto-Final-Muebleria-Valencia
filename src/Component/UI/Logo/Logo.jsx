@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const Logo = ({estylo}) => {
+export const Logo = ({estylo,text="Muebles Valencia"}) => {
     return (
-        <h1 className={estylo}>Muebles Valencia</h1>
+        <h1 className={estylo}>{text}</h1>
+        
     )
 }
