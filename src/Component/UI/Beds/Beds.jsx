@@ -3,10 +3,7 @@ import { Comp_Img } from '../Comp_Img/Comp_Img'
 import img from '../../../Images/cama1.jpg'
 import img2 from '../../../Images/cama2.PNG'
 import img3 from '../../../Images/cama3.jpg'
-
-
-
-
+import { DataViewDemo } from './Beds2'
 
 export const Beds = () => {
 
@@ -58,7 +55,8 @@ export const Beds = () => {
 
   return (
     <div>
-        <h1 className='title_Beds'>CAMAS DISPONIBLES</h1>
+      <DataViewDemo/>
+        {/* <h1 className='title_Beds'>CAMAS DISPONIBLES</h1>
         <br />
         <div className='products_Container'>
             <Comp_Img className="tarjeta" 
@@ -96,7 +94,7 @@ export const Beds = () => {
             "Cabecero: 160 cm alto x 140 cm ancho x 8 cm largo."}
             text2={"Cantidad disponible: 16"}
             />
-        </div>
+        </div> */}
     </div>
   )
 }

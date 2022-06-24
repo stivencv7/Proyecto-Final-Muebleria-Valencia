@@ -1,5 +1,30 @@
 .p-sortable-column{
     background-image: url('../../../Images/madera.webp') !important;
     background-size: cover;
-    border-right: solid 2px rgba(1, 71, 1, 0.671) !important;
+    border: solid 2px rgba(1, 71, 1, 0.671) !important;
+}
+
+.p-datatable .p-datatable-tbody > tr{
+    background-color: rgb(165, 42, 42) !important;
+    color: white !important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+    border: solid 2px rgba(1, 71, 1, 0.671) !important;
+}
+
+.p-datatable .p-sortable-column.p-highlight:not(.p-sortable-disabled) .p-sortable-column-icon{
+    color: brown !important;
+}
+
+.p-datatable .p-sortable-column.p-highlight:focus{
+    color: white !important;
+}
+.p-datatable .p-sortable-column.p-highlight{
+    color: #343a40 !important;
+}
+
+.p-datatable .p-sortable-column:focus {
+    box-shadow: inset 0 0 0 0.15rem seagreen !important;
+    outline: 0 none;
 }
