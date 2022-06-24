@@ -7,7 +7,7 @@ export const FormRegisterProducts = ({ onChange1, onChange2, onChange3, onChange
         <div>
             <br />
             <div id='informacion' className='form_Products'>
-            <h1>Registrar Producto</h1>
+            <h1 className='titleProducts'>Registrar Producto</h1>
                 <form>
                     <input type="hidden" id="idprodut" onChange={onChange1} /> 
                     <label className='input-group-text'>nombre</label>
