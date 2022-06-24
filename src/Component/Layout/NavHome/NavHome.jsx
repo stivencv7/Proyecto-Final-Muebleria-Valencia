@@ -20,7 +20,7 @@ export const NavHome = () => {
 
     const header=(
         <div className='div-login'>
-            <Logo estylo='title-login' text='Inicio Sesion'/>
+            <Logo estylo='title-login' text='Inicio Sesión'/>
        </div>
        
     )

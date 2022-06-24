@@ -15,9 +15,9 @@
     color: transparent !important;
 }
 img,svg{
-    width: 80% !important;
+    width: 75% !important;
    
-    height: 30em;
+    height: 32em;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{
     background-color: rgb(66, 219, 66) !important;

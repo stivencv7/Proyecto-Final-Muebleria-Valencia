@@ -18,8 +18,9 @@ export const MainHeader = () => {
 }
 **/
 import React from 'react'
+import { InputAutocomplete } from '../../UI/InputAutocomplete/InputAutocomplete'
 import { Logo } from '../../UI/Logo/Logo'
-import { ContentPageMain } from '../ContentPageMain/ContentPageMain'
+
 import { NavHome } from '../NavHome/NavHome'
 import { SubHeader } from '../SubHeader/SubHeader'
 
@@ -28,6 +29,7 @@ export const MainHeader = () => {
     <>
       <header className='header-main'>
         <Logo estylo={'title-main'}/>
+        <InputAutocomplete/>
         <NavHome/>
       </header>
       <SubHeader/>

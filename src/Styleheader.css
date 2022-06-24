@@ -3,8 +3,7 @@
 .header-main {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: rgba(235, 163, 57, 0.945);
+    justify-content:space-around;
     border-bottom: 5px solid rgb(0, 189, 72);
     height: 12vh;
     background-image: url("./Images/tabla2.jpg");
@@ -93,19 +92,16 @@
     background-color: white;
   
   }
-  
-  
-  
+
   .list-items:hover {
     color: rgb(0, 212, 28);
   }
-  
+
   .icons {
     display: flex;
     gap: 60px;
-  
   }
-  
+
   .icon {
     color: green;
     background-color: wheat;
@@ -300,4 +296,29 @@
   }
   .p-dialog .p-dialog-header .p-dialog-header-icon{
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s !important;
+  }
+
+  .input-wrapper{
+    position: relative;
+    width: 271px;
+    left: -200px;
+   
+  }
+  .input-icon{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    left:12px;
+    top:30%;
+    transform:translateY(-1%);
+  }
+  .rs-input{
+    width: 400px !important;
+    text-align: center;
+    border-radius: 15px;
+    height: 40px;
+   
+  }
+  .rs-input :focus::before{
+    box-shadow: 1px 1px 1px 1px transparent !important;
   }
