@@ -19,8 +19,7 @@ export const NavHome = () => {
 
     const header=(
         <div className='div-login'>
-    
-        <h3 className='title-login'>Inicio Sesion</h3>
+            <h3 className='title-login'>Inicio Sesion</h3>
        </div>
        
     )
