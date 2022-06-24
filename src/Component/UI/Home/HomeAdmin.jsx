@@ -6,11 +6,11 @@ export const HomeAdmin = () => {
     <div>
         <div className='homeAdminNavigator'>
           <br/>
-          <Link to="/productsInterface" className='list-group-item-admin'><span>Productos</span></Link>
+          <Link to="/homeAdmin/productsInterface" className='list-group-item-admin'><span>Productos</span></Link>
           <br />
-          <Link to="/usersInterface" className='list-group-item-admin'><span>Usuarios</span></Link>
+          <Link to="/homeAdmin/usersInterface" className='list-group-item-admin'><span>Usuarios</span></Link>
           <br />
-          <Link to="/suppliersInterface" className='list-group-item-admin'><span>Proveedores</span></Link>
+          <Link to="/homeAdmin/suppliersInterface" className='list-group-item-admin'><span>Proveedores</span></Link>
         </div>
         <div className='manual'>
           <h1>Manual de uso</h1>
@@ -19,6 +19,6 @@ export const HomeAdmin = () => {
           <p>Dale click al link de usuarios para dirigirte al menú de gestion de usuarios, en este menú se encuentran las opciones de: editar un usuario, eliminar un usuario y buscar un usuario.</p>
           <p>Dale click al link de proveedores para dirigirte al menú de gestion de proveedores, en este menú se encuentran las opciones de: editar un proveedor, eliminar un proveedor , buscar un proveedor y agregar nuevos proveedores.</p>
         </div>
-    </div>
+      </div>
   )
 }

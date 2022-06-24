@@ -5,7 +5,7 @@ export const FormRegisterSuppliers = ({onChange1 , onChange2 , onChange3 , onCli
   return (
     <div>
       <form className='form'>
-        <h1>Registrar Proveedor</h1>
+        <h1 className='titleSupplier'>Registrar Proveedor</h1>
         <label id='name_supplier2' className='input-group-text'>Nombre Completo</label>
         <input type="text" id='name_supplier' className='form-control2' onChange={onChange1} />
         <br /><br />
@@ -15,7 +15,6 @@ export const FormRegisterSuppliers = ({onChange1 , onChange2 , onChange3 , onCli
         <label id='id_supplier' className='input-group-text'>Cedula</label>
         <input type="text" id='id_supplier' className='form-control2' onChange={onChange3}/>
         <br />
-        <img src={gifSupplier} alt="" className='supplierGif'/>
         <div>
             <input type="button" value="Registrar Proveedor" id='btnRegister' className='btnRegisterSupplier' onClick={onClick} />     
         </div>
