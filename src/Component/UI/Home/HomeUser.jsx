@@ -4,6 +4,8 @@ import { Comp_Img } from '../Comp_Img/Comp_Img'
 import img from '../../../Images/cama1.jpg'
 import img2 from '../../../Images/mueble1.PNG'
 import 'primeicons/primeicons.css';
+import { DataViewDemo } from '../Beds/Beds2'
+
 
 export const HomeUser = () => {
   function pintar(){
@@ -50,32 +52,9 @@ export const HomeUser = () => {
             <i className="pi pi-shopping-cart" style={{'fontSize': '2em'}}></i>
         </div>
         <Categories/>
-        <br /><br /><br />
+        <br /><br /><br /><br /><br />
         <div className='products_Container2'>
-            <Comp_Img className="tarjeta" 
-            url={img}
-            evento={pintar}
-            evento2={despintar}
-            description="cama" 
-            ids="img1"
-            ids2="p1"
-            text={"Combo elaborado en tela gris de buena calidad. Diseño moderno y simple ideal para todo tipo de ambientes. 140x190"}
-            text2={"Cantidad disponible: 10"}
-            ids3="p3"
-            textButton={"Agregar al carrito"}
-            />
-            <Comp_Img
-            url = {img2}
-            evento={pintar2}
-            evento2={despintar2}
-            description = "Mueble"
-            ids="img2"
-            ids2="p2"
-            text="Mueble para sala de color gris "
-            text2="Cantidad disponible: 15"
-            ids3="p4"
-            textButton={"Agregar al carrito"}
-            />
+            <DataViewDemo/>
         </div>
     </div>
   )
