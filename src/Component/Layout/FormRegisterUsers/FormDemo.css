@@ -1,24 +1,10 @@
-.form-demo .card {
-    min-width: 450px;
-}
-.form-demo .card form {
-    margin-top: 2rem;
-}
-.form-demo .card .field {
-    margin-bottom: 1.5rem;
-}
-.form-demo .card {
-    width: 80%;
+.form-demo{
+    display: flex;
+    justify-content: center;
 }
 
-.form-demo .card {
-    width: 100%;
-    min-width: 0;
-}
-
-.form_Register{
-    margin-left: 30%;
-    margin-right: 30%;
+.card{
+    margin-left: 0%;
 }
 
 .mt-2{
@@ -51,3 +37,9 @@
     border: solid 10000003px rgb(0,189,72) !important;
 
 }
+.page-formUser{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+

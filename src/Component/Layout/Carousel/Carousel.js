@@ -9,21 +9,23 @@ import {
 import './CarouselDemo.css';
 
 const items = [
+ 
   {
-    src: require("../../../Images/cama1.jpg"),
-    altText: 'Cama',
-    caption: 'Cama'
+    src: require("../../../Images/camaazul.jpeg"),
+    
   },
   {
-    src: require("../../../Images/mueble1.PNG"),
-    altText: 'mueble',
-    caption: 'Mueble'
+    src: require("../../../Images/mueble1.PNG")
   },
   {
-    src: require("../../../Images/mueble2.PNG"),
-    altText: 'mueble',
-    caption: 'Mueble'
+    src: require("../../../Images/sillasymesa.jpeg")
+    
+  },
+  {
+    src: require("../../../Images/sofaazul.jpeg")
+    
   }
+  
 ];
 
 class CarouselDemo extends Component {
@@ -71,9 +73,14 @@ class CarouselDemo extends Component {
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}
+          
         >
-          <img src={item.src} alt={item.altText} width="50%" height="350px"/>
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          
+              <img className='img' src={item.src} alt={item.altText} width="50%" height="350px"/>
+            
+  
+          <CarouselCaption className='itemC' captionText={item.caption} captionHeader={item.caption} />
+         
         </CarouselItem>
       );
     });
