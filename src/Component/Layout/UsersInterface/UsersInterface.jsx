@@ -1,5 +1,6 @@
 import React from 'react'
-import { UsersList } from '../SearchUser/SearchUser'
+import { DataTableEditUsers } from '../EditUsers/EditUsers'
+// import { UsersList } from '../SearchUser/SearchUser'
 import { DataTableUsers } from '../UsersListGeneral/UsersList'
 // import { UsersListGeneral } from '../UsersListGeneral/UsersListGeneral'
 
@@ -7,7 +8,7 @@ export const UsersInterface = () => {
   return (
     <div>
         <div>
-            <UsersList/>
+            <DataTableEditUsers/>
         </div>
         <br /><br /><hr />
         <div>
