@@ -6,10 +6,12 @@ export const SubHeader = () => {
     
     const [visible, setVisible] = useState(false);
     return (
+
         <div className='subHeader'>
           
             <Sidebar  className='sidebar1' visible={visible} style={{ width: '23em' }} onHide={() => setVisible(false)} >
             <header><h1>Opciones</h1></header>
+
             </Sidebar>
            
             <div className="inf">

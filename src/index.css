@@ -663,7 +663,9 @@ code {
   border-radius: 0.25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
+.titleProducts{
+  text-align: center;
+}
 .titleShoppingCart{
   background-color: rgba(1, 71, 1, 0.671);
   color: white;
@@ -672,8 +674,8 @@ code {
 }
 
 .iconsProducts{
-  width: 45%;
   height: 15rem;
+  width: 35% !important;
   margin-left: 55%;
   margin-top: -40%;
 }
@@ -712,9 +714,6 @@ code {
   margin-bottom: -10%;
 }
 
-.supplierGif{
-  height: 15rem;
-  float: right;
-  margin-top: -50%;
-  margin-right: 3%;
+.titleSupplier{
+  text-align: center;
 }

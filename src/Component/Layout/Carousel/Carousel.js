@@ -86,7 +86,7 @@ class CarouselDemo extends Component {
     });
 
     return (
-        <div className='container_Carousel'>
+        <div className='container_Carousel' id='container_Carousel'>
             <Carousel
                 activeIndex={activeIndex}
                 next={this.next}
