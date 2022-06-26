@@ -1,6 +1,5 @@
 import React from 'react'
 import './ButtonDark.css'
-import '@fortawesome/free-solid-svg-icons'
 
 export const ButtonDark = () => {
     const darkMode = () => {
@@ -17,5 +16,6 @@ export const ButtonDark = () => {
       </button>
       <br />       
     </div>
+    
   )
 }
