@@ -1,9 +1,4 @@
-.p-datatable .p-datatable-thead > tr > th{
-    background-image: url('../../../Images/madera.webp') !important;
-    background-size: cover;
-    border: solid 2px rgba(1, 71, 1, 0.671) !important;
-}
-.header-admin-editUsers{
+.header-admin{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -35,4 +30,22 @@
     background-color: currentColor;
     height: 50px;
     align-items: center;
+}
+
+.homeAdminNavigator {
+    display: flex;
+    gap: 40px;
+  
+}
+  
+.list-group-item-admin {
+    text-decoration: none;
+    color: green;
+    text-shadow: 0px 0px 3px green;
+  
+    font-size: 20px;
+}
+  
+.list-group-item-admin:hover {
+    color: red;
 }
