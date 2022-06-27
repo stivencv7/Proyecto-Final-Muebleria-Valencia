@@ -29,7 +29,9 @@ export const NavHome = () => {
         <nav className='icons'>
             <Link className='icon' to="/"><i className="pi pi-home ico" ></i></Link> 
             <Sidebar position='right' visible={visible2} style={{ width: '30em' }} onHide={() => setVisible2(false)}>
-               
+                <div>
+                        
+                </div>   
             </Sidebar>
             <div className="inf">
                 <button className='icon'  onClick={(e) => setVisible2(true)} ><i className="pi pi-shopping-cart ico"></i></button>

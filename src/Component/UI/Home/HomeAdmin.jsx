@@ -19,6 +19,7 @@ export const HomeAdmin = () => {
           <p>Dale click al link de usuarios para dirigirte al menú de gestion de usuarios, en este menú se encuentran las opciones de: editar un usuario, eliminar un usuario y buscar un usuario.</p>
           <p>Dale click al link de proveedores para dirigirte al menú de gestion de proveedores, en este menú se encuentran las opciones de: editar un proveedor, eliminar un proveedor , buscar un proveedor y agregar nuevos proveedores.</p>
         </div>
+        <br /><br /><br />
       </div>
   )
 }
