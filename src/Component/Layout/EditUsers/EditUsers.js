@@ -122,7 +122,7 @@ export class DataTableEditUsers extends Component {
                 <div>
                     <header className='header-admin-product'>
                         <Logo estylo={'title-main'}/>
-                        <h2>Menu Producto</h2>
+                        <h2>Gestion Usuarios</h2>
                         <nav className='icons'>
                             <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
                         </nav>
