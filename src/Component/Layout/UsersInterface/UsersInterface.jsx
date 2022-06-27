@@ -10,10 +10,6 @@ export const UsersInterface = () => {
         <div>
             <DataTableEditUsers/>
         </div>
-        <br /><br /><hr />
-        <div>
-            <DataTableUsers/>
-        </div>
     </div>
   )
 }

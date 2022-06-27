@@ -12,7 +12,7 @@ import { UsersInterface } from './Component/Layout/UsersInterface/UsersInterface
 import { SuppliersInterface } from './Component/Layout/SuppliersInterface/SuppliersInterface'
 import { ProductsInterface } from './Component/Layout/ProductsInterface/ProductsInterface'
 import { HomeUser } from './Component/UI/Home/HomeUser'
-
+import './contenPageMain.css'
 
 function App() {
   return (

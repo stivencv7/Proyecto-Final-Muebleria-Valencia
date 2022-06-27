@@ -23,7 +23,7 @@ export const NavHome = () => {
 
     const header=(
         <div className='div-login'>
-            <Logo estylo='title-login' text='Inicio Sesion'/>
+            <Logo estylo='title-login' text='Inicio Sesión'/>
        </div>
        
     )
@@ -70,9 +70,7 @@ export const NavHome = () => {
             </Sidebar>
             <div className="inf">
                 <button className='icon'  onClick={(e) => setVisible2(true)} ><i className="pi pi-shopping-cart ico"></i></button>
-                <span className="tool-text">
-                    menu
-                </span>
+              
             </div>
 
        

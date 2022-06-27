@@ -54,15 +54,6 @@ export const FormRegisterProducts = () => {
 
     return (
         <div>
-            <div>
-                <header className='header-admin-product'>
-                    <Logo estylo={'title-main'}/>
-                    <h2>Gestion Productos</h2>
-                    <nav className='icons'>
-                        <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
-                    </nav>
-                </header>
-            </div>
             <div className="form-demo">
                 <Dialog visible={showMessage} onHide={() => setShowMessage(false)} position="top" showHeader={false} breakpoints={{ '960px': '80vw' }} style={{ width: '30vw' }}>
                     <div className="flex align-items-center flex-column pt-6 px-3">

@@ -11,11 +11,11 @@ import './CarouselDemo.css';
 const items = [
  
   {
-    src: require("../../../Images/camaazul.jpeg"),
+    src: require("../../../Images/sillasrojas.jpeg"),
     
   },
   {
-    src: require("../../../Images/mueble1.PNG")
+    src: require("../../../Images/mueblegris.jpeg")
   },
   {
     src: require("../../../Images/sillasymesa.jpeg")
