@@ -2,6 +2,7 @@
     background-image: url('../../../Images/madera.webp') !important;
     background-size: cover;
     border: solid 2px rgba(1, 71, 1, 0.671) !important;
+    color: black;
 }
 .header-admin-editUsers{
     display: flex;
@@ -26,9 +27,6 @@
     
 }
 
-.icon:hover {
-    color: red;
-}
 .homeAdminNavigator{
     display: flex;
     justify-content: space-evenly;

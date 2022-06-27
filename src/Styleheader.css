@@ -285,13 +285,9 @@ font-size: 30px !important;
   
 }
 
-.p-sidebar-content{
-  background-image:url('./Images/tablaAbajo2.jpeg');
-  background-size: cover;
-}
 .p-sidebar-header{
-  background-image:url('./Images/tablaAbajo2.jpeg');
-  background-size: cover;
+ 
+
   border-bottom: 3px solid #6e3004;
   justify-content: center;
   gap: 80px;
@@ -304,3 +300,8 @@ font-size: 30px !important;
   content:"Dale comodidad a tu hogar";
   border-radius: 15px;
 }
+
+.page-register-footer{
+
+}
+

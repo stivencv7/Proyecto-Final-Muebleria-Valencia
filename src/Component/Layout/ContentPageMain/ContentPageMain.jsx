@@ -10,7 +10,7 @@ import logo from '../../../Images/armario.jpeg'
 export const ContentPageMain = () => {
     return (
        <div className='content-page-main'>    
-          <CarouselDemo/>    
+          <CarouselDemo/> 
        </div>
     )
 }

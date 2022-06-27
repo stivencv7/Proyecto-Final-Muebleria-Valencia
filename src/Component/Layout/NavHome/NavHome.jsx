@@ -30,15 +30,6 @@ export const NavHome = () => {
    
     return (
         <nav className='icons'>
-<<<<<<< HEAD
-            <Link className='icon' to="/"><i className="pi pi-home ico" ></i></Link>
-            
-            
-            <Sidebar    className='sidebar3' position='right' visible={visible2} style={{ width: '30em' }} onHide={() => setVisible2(false)}>
-            <header><h1>Carrrito</h1></header>
-            </Sidebar >
-           
-=======
             <Link className='icon' to="/"><i className="pi pi-home ico" ></i></Link> 
             <Sidebar position='right' visible={visible2} style={{ width: '30em' }} onHide={() => setVisible2(false)}>
                 <div>
@@ -77,12 +68,9 @@ export const NavHome = () => {
                     </div>
                 </div>   
             </Sidebar>
->>>>>>> d816be9e21fd28ed5bb267d574192925d742408d
             <div className="inf">
                 <button className='icon'  onClick={(e) => setVisible2(true)} ><i className="pi pi-shopping-cart ico"></i></button>
-                <span className="tool-text">
-                    menu
-                </span>
+              
             </div>
 
        
