@@ -1,6 +1,9 @@
 .form-demo{
     display: flex;
     justify-content: center;
+    width: 30%;
+    margin-left: 598px;
+    
 }
 
 .card{
@@ -38,7 +41,7 @@
 
 }
 .page-formUser{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
 }

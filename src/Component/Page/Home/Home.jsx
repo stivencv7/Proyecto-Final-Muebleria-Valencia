@@ -8,7 +8,9 @@ export const Home = () => {
     return (
         <div id='container_Main'>
             <MainHeader/>
-            <ContentPageMain/>
+            <div  className='content-conteMain'>
+                <ContentPageMain/>
+            </div>
         </div>
     )
 }

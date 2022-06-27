@@ -11,8 +11,7 @@ import { RegisterUser } from "./Component/Page/RegisterUser/RegisterUser";
 import { UsersInterface } from './Component/Layout/UsersInterface/UsersInterface'
 import { SuppliersInterface } from './Component/Layout/SuppliersInterface/SuppliersInterface'
 import { ProductsInterface } from './Component/Layout/ProductsInterface/ProductsInterface'
-
-
+import "./contenPageMain.css"
 function App() {
   return (
     <div className="App">

@@ -284,6 +284,7 @@ font-size: 30px !important;
   color: green;
   
 }
+
 .p-sidebar-content{
   background-image:url('./Images/tablaAbajo2.jpeg');
   background-size: cover;
@@ -295,8 +296,8 @@ font-size: 30px !important;
   justify-content: center;
   gap: 80px;
   color: #0f130e;
-  font-size: 17px;
-  
+  font-size:17px;
+
 }
 
 .p-sidebar-header::before{

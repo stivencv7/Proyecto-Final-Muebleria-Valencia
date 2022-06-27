@@ -26,14 +26,13 @@ import { SubHeader } from '../SubHeader/SubHeader'
 
 export const MainHeader = () => {
   return (
-    <>
+    <div className='header-user'>
       <header className='header-main'>
         <Logo estylo={'title-main'}/>
         <InputAutocomplete/>
         <NavHome/>
       </header>
       <SubHeader/>
-     
-    </>
+    </div>
   )
 }
