@@ -57,7 +57,7 @@ export const FormRegisterSuppliers2 = () => {
             <div>
                 <header className='header-admin-supplier'>
                     <Logo estylo={'title-main'}/>
-                    <h2>Menu Producto</h2>
+                    <h2>Gestion Proveedores</h2>
                     <nav className='icons'>
                         <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
                     </nav>

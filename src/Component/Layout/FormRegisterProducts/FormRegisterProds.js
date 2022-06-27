@@ -57,7 +57,7 @@ export const FormRegisterProducts = () => {
             <div>
                 <header className='header-admin-product'>
                     <Logo estylo={'title-main'}/>
-                    <h2>Menu Producto</h2>
+                    <h2>Gestion Productos</h2>
                     <nav className='icons'>
                         <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
                     </nav>

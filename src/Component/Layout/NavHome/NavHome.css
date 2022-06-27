@@ -1,0 +1,24 @@
+.imgShoppingCart{
+    width: 60% !important;
+    height: 15rem;
+    float: left;
+    margin: 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+.inputShoppingCart{
+    border-radius: 100%;
+    width: 10%;
+}
+
+.totalPrice{
+    color: black;
+}
+
+.bottomShoppingCart{
+    text-align: center;
+}
+
