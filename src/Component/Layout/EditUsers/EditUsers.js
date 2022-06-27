@@ -7,6 +7,8 @@ import { Dropdown } from 'primereact/dropdown';
 import { Toast } from 'primereact/toast';
 import './DataTableDemo.css';
 import '../UsersListGeneral/users.css'
+import { Logo } from '../../UI/Logo/Logo'
+import { Link } from 'react-router-dom'
 
 export class DataTableEditUsers extends Component {
 
@@ -116,19 +118,30 @@ export class DataTableEditUsers extends Component {
 
     render() {
         return (
-            <div className="datatable-editing-demo">
-                <Toast ref={(el) => this.toast = el} />
-                <div className="card p-fluid">
-                    <h5>Editar usuario</h5>
-                    <DataTable value={this.state.users1} editMode="row" dataKey="id"  onRowEditComplete={this.onRowEditComplete1} responsiveLayout="scroll">
-                        <Column field="identification" header="Cedula" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
-                        <Column field="name" header="Nombre" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
-                        <Column field="surname" header="Apellido" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
-                        <Column field="cellphoneNumber" header="Telefono" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
-                        <Column field="email" header="Correo" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
-                        <Column field="date" header="Fecha de nacimiento" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
-                        <Column rowEditor headerStyle={{ width: '10%', minWidth: '8rem' }} bodyStyle={{ textAlign: 'center' }}></Column>
-                    </DataTable>
+            <div>
+                <div>
+                    <header className='header-admin-product'>
+                        <Logo estylo={'title-main'}/>
+                        <h2>Gestion Usuarios</h2>
+                        <nav className='icons'>
+                            <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
+                        </nav>
+                    </header>
+                </div>
+                <div className="datatable-editing-demo">
+                    <Toast ref={(el) => this.toast = el} />
+                    <div className="card p-fluid">
+                        <h5>Editar usuario</h5>
+                        <DataTable value={this.state.users1} editMode="row" dataKey="id"  onRowEditComplete={this.onRowEditComplete1} responsiveLayout="scroll">
+                            <Column field="identification" header="Cedula" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
+                            <Column field="name" header="Nombre" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
+                            <Column field="surname" header="Apellido" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
+                            <Column field="cellphoneNumber" header="Telefono" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
+                            <Column field="email" header="Correo" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
+                            <Column field="date" header="Fecha de nacimiento" editor={(options) => this.textEditor(options)} style={{ width: '20%' }}></Column>
+                            <Column rowEditor headerStyle={{ width: '10%', minWidth: '8rem' }} bodyStyle={{ textAlign: 'center' }}></Column>
+                        </DataTable>
+                    </div>
                 </div>
             </div>
         );

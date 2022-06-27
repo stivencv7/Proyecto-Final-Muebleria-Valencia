@@ -1,6 +1,4 @@
 import React from 'react'
-import './ButtonDark.css'
-
 
 export const ButtonDark = () => {
     const darkMode = () => {
@@ -16,5 +14,6 @@ export const ButtonDark = () => {
       <input type="checkbox"  style={{position:"fixed",margin: "6px 0px 0px 21px"}} id="toggle"  onClick={darkMode}/>
       <label for="toggle" className="button"></label>  
     </div>
+    
   )
 }

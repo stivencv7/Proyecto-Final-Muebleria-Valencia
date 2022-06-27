@@ -1,9 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Logo } from '../../UI/Logo/Logo'
+import"./HomeAdmin.css"
+
 
 export const HomeAdmin = () => {
   return (
     <div>
+      <div>
+        <header className='header-admin'>
+          <Logo estylo={'title-main'}/>
+          <h2>Menu Administrador</h2>
+          <nav className='icons'>
+            <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
+            <Link className='icon' to="/"><i className="pi pi-cog ico" ></i></Link>
+          </nav>
+        </header>
+      </div>
         <div className='homeAdminNavigator'>
           <br/>
           <Link to="/homeAdmin/productsInterface" className='list-group-item-admin'><span>Productos</span></Link>
@@ -19,6 +32,7 @@ export const HomeAdmin = () => {
           <p>Dale click al link de usuarios para dirigirte al menú de gestion de usuarios, en este menú se encuentran las opciones de: editar un usuario, eliminar un usuario y buscar un usuario.</p>
           <p>Dale click al link de proveedores para dirigirte al menú de gestion de proveedores, en este menú se encuentran las opciones de: editar un proveedor, eliminar un proveedor , buscar un proveedor y agregar nuevos proveedores.</p>
         </div>
+        <br /><br /><br />
       </div>
   )
 }

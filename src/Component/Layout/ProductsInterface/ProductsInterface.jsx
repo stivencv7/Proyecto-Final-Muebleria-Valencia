@@ -9,8 +9,8 @@ import { DataTableProducts } from '../IteratorListProduct/ProductsList'
 export const ProductsInterface = () => {
   return (
     <div>
-        <DataTableEditProducts/>
         <FormRegisterProducts/>
+        <DataTableEditProducts/>
         <DataTableProducts/>
     </div>
   )

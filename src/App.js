@@ -11,7 +11,9 @@ import { RegisterUser } from "./Component/Page/RegisterUser/RegisterUser";
 import { UsersInterface } from './Component/Layout/UsersInterface/UsersInterface'
 import { SuppliersInterface } from './Component/Layout/SuppliersInterface/SuppliersInterface'
 import { ProductsInterface } from './Component/Layout/ProductsInterface/ProductsInterface'
-import "./contenPageMain.css"
+import { HomeUser } from './Component/UI/Home/HomeUser'
+
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,7 @@ function App() {
         <Route path="/homeAdmin/usersInterface" element={<UsersInterface/>}/>
         <Route path="/homeAdmin/suppliersInterface" element={<SuppliersInterface/>}/>
         <Route path="/homeAdmin/productsInterface" element={<ProductsInterface/>}/>
+        <Route path="/homeUser" element={<HomeUser/>}/>
       </Routes>
     </div>
 
