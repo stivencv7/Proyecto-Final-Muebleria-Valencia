@@ -8,6 +8,7 @@ import wardrobe from '../../../Images/armario.jpeg'
 import bed from '../../../Images/cama2.PNG'
 import './NavHome.css'
 
+
 export const NavHome = () => {
 
     const [visible, setVisible] = useState(false)
@@ -31,6 +32,7 @@ export const NavHome = () => {
     return (
         <nav className='icons'>
             <Link className='icon' to="/"><i className="pi pi-home ico" ></i></Link> 
+            <Link className='icon' to="/homeAdmin"><p>Administrador</p></Link>
             <Sidebar position='right' visible={visible2} style={{ width: '30em' }} onHide={() => setVisible2(false)}>
                 <div>
                     <div className='infoProduct'>                        

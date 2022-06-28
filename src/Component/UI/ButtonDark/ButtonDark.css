@@ -99,7 +99,7 @@
     content:"☾";
     background-color: #1f257f;
     color: white;
-    transform: translateX(50px)rotate(360deg);
+    transform: translateX(50px) rotate(360deg);
 }
 .divDark{
     width: 10px;

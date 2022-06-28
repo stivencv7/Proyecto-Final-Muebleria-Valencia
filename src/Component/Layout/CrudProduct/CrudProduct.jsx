@@ -314,19 +314,19 @@ export const CrudProduct = () => {
                         <div className="formgrid grid">
                             <div className="field-radiobutton col-6">
                                 <RadioButton inputId="category1" name="category" value="Accessories" onChange={onCategoryChange} checked={product.category === 'Accessories'} />
-                                <label htmlFor="category1">Accessorios</label>
+                                <label htmlFor="category1">Base Camas</label>
                             </div>
                             <div className="field-radiobutton col-6">
                                 <RadioButton inputId="category2" name="category" value="Clothing" onChange={onCategoryChange} checked={product.category === 'Clothing'} />
-                                <label htmlFor="category2">Ropa</label>
+                                <label htmlFor="category2">Sillas</label>
                             </div>
                             <div className="field-radiobutton col-6">
                                 <RadioButton inputId="category3" name="category" value="Electronics" onChange={onCategoryChange} checked={product.category === 'Electronics'} />
-                                <label htmlFor="category3">Electrónica</label>
+                                <label htmlFor="category3">Colchones</label>
                             </div>
                             <div className="field-radiobutton col-6">
                                 <RadioButton inputId="category4" name="category" value="Fitness" onChange={onCategoryChange} checked={product.category === 'Fitness'} />
-                                <label htmlFor="category4">Fitnes</label>
+                                <label htmlFor="category4">Comedores</label>
                             </div>
                         </div>
                     </div>
