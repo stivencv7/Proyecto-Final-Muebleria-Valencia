@@ -1,4 +1,4 @@
-.content-product{
+.content-suppliers{
    display: flex;
    justify-content: center;
    width: 100%;
@@ -26,12 +26,13 @@
    background-color: wheat;
    border-radius: 100%;
    padding: 10px 10px;
-   
+
 }
 
 .icon:hover {
    color: red;
 }
+
 .homeAdminNavigator{
    display: flex;
    justify-content: space-evenly;

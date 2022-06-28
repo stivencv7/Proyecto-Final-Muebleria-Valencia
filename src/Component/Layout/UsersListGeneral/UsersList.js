@@ -23,7 +23,7 @@ export class DataTableUsers extends Component {
         return (
             <div>
                 <div className="card">
-                    <h5>Lista de usuarios</h5>
+                    <h5 className='list'>Gestionar Usuarios</h5>
                     <DataTable value={this.state.users} responsiveLayout="scroll">
                         <Column field="id" header="Cedula" sortable></Column>
                         <Column field="name" header="Nombre" sortable></Column>

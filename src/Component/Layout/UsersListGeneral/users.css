@@ -35,6 +35,10 @@
 
 }
 
+.list{
+    text-align: center;
+    font-size: 30px;
+}
 /***
 
 .datatable-crud-demo .table-header {

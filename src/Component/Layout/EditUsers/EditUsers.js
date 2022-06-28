@@ -7,8 +7,6 @@ import { Dropdown } from 'primereact/dropdown';
 import { Toast } from 'primereact/toast';
 import './DataTableDemo.css';
 import '../UsersListGeneral/users.css'
-import { Logo } from '../../UI/Logo/Logo'
-import { Link } from 'react-router-dom'
 
 export class DataTableEditUsers extends Component {
 
@@ -119,15 +117,6 @@ export class DataTableEditUsers extends Component {
     render() {
         return (
             <div>
-                <div>
-                    <header className='header-admin-product'>
-                        <Logo estylo={'title-main'}/>
-                        <h2>Gestion Usuarios</h2>
-                        <nav className='icons'>
-                            <Link className='icon' to="/homeadmin"><i className="pi pi-home ico" ></i></Link>
-                        </nav>
-                    </header>
-                </div>
                 <div className="datatable-editing-demo">
                     <Toast ref={(el) => this.toast = el} />
                     <div className="card p-fluid">
@@ -147,4 +136,3 @@ export class DataTableEditUsers extends Component {
         );
     }
 }
-                 
